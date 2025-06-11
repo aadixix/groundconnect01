@@ -1,0 +1,11 @@
+{
+  "/_not-found/page": "/_not-found",
+  "/favicon.ico/route": "/favicon.ico",
+  "/(root)/page": "/",
+  "/category/[slug]/page": "/category/[slug]",
+  "/author/[username]/page": "/author/[username]",
+  "/rss/page": "/rss",
+  "/tag/[tag]/page": "/tag/[tag]",
+  "/rss/[slug]/page": "/rss/[slug]",
+  "/(root)/articles/[slug]/page": "/articles/[slug]"
+}

@@ -1,0 +1,98 @@
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --foreground: #1f3927;
+  --greenBackground:#1f7445;
+  --greenLight:#279832;
+}
+/* @theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+} */
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: "Mukta", sans-serif;
+}
+
+.main_width{
+  max-width:1500px;
+  width:90%;
+  margin:auto;
+}
+.border{
+  border-color:#EDEDED
+
+}
+.greenBg{
+  background-color: var(--greenBackground);
+}
+.greenColorBg{
+  background-color: var(--greenLight);
+
+}
+.greenColor{
+  color:var(--greenLight)
+}
+.underline-line {
+  position: absolute;
+  left: 50%;
+  bottom: -4px;
+  width: 0;
+  height: 2px;
+  background-color: #22c55e; 
+  border-radius:4px;
+  transition: width 0.3s ease, left 0.3s ease;
+  transform-origin: center;
+}
+
+.relative:hover .underline-line,
+.group:hover > button .underline-line,
+.group:hover > div a .underline-line {
+  width: 100%;
+  left: 0;
+}
+
+
+
+.article-content {
+  line-height: 1.8;
+}
+
+.article-content h1,
+.article-content h2,
+.article-content h3 {
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
+.article-content p {
+  margin-bottom: 1.5rem;
+}
+
+.article-content img {
+  border-radius: 8px;
+  margin: 2rem 0;
+}
+
+.article-content blockquote {
+  border-left: 4px solid #16a34a;
+  padding-left: 1rem;
+  margin: 2rem 0;
+  font-style: italic;
+  background: #f9fafb;
+  padding: 1rem;
+  border-radius: 4px;
+}
