@@ -294,20 +294,20 @@ const MainBanner = async ({ data, mainBanner })=>{
                                                     className: "greenColorBg-dynamic w-[8px] h-[48px]"
                                                 }, void 0, false, {
                                                     fileName: "[project]/app/components/banner/MainBanner.jsx",
-                                                    lineNumber: 59,
+                                                    lineNumber: 61,
                                                     columnNumber: 17
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                                     className: "greenBg-dynamic w-[8px] h-[48px]"
                                                 }, void 0, false, {
                                                     fileName: "[project]/app/components/banner/MainBanner.jsx",
-                                                    lineNumber: 60,
+                                                    lineNumber: 62,
                                                     columnNumber: 17
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/app/components/banner/MainBanner.jsx",
-                                            lineNumber: 58,
+                                            lineNumber: 60,
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
@@ -315,13 +315,13 @@ const MainBanner = async ({ data, mainBanner })=>{
                                             children: "Top story"
                                         }, void 0, false, {
                                             fileName: "[project]/app/components/banner/MainBanner.jsx",
-                                            lineNumber: 62,
+                                            lineNumber: 64,
                                             columnNumber: 15
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/app/components/banner/MainBanner.jsx",
-                                    lineNumber: 57,
+                                    lineNumber: 59,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -330,23 +330,23 @@ const MainBanner = async ({ data, mainBanner })=>{
                                         variant: "compact"
                                     }, void 0, false, {
                                         fileName: "[project]/app/components/banner/MainBanner.jsx",
-                                        lineNumber: 67,
+                                        lineNumber: 69,
                                         columnNumber: 15
                                     }, this)
                                 }, void 0, false, {
                                     fileName: "[project]/app/components/banner/MainBanner.jsx",
-                                    lineNumber: 66,
+                                    lineNumber: 68,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/app/components/banner/MainBanner.jsx",
-                            lineNumber: 56,
+                            lineNumber: 58,
                             columnNumber: 11
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/app/components/banner/MainBanner.jsx",
-                        lineNumber: 55,
+                        lineNumber: 57,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -369,15 +369,16 @@ const MainBanner = async ({ data, mainBanner })=>{
                                                     alt: data.Title,
                                                     fill: true,
                                                     sizes: " ",
+                                                    priority: true,
                                                     className: "w-full h-full object-cover border"
                                                 }, void 0, false, {
                                                     fileName: "[project]/app/components/banner/MainBanner.jsx",
-                                                    lineNumber: 94,
+                                                    lineNumber: 96,
                                                     columnNumber: 21
                                                 }, this)
                                             }, void 0, false, {
                                                 fileName: "[project]/app/components/banner/MainBanner.jsx",
-                                                lineNumber: 93,
+                                                lineNumber: 95,
                                                 columnNumber: 19
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -388,7 +389,7 @@ const MainBanner = async ({ data, mainBanner })=>{
                                                         children: data.Title
                                                     }, void 0, false, {
                                                         fileName: "[project]/app/components/banner/MainBanner.jsx",
-                                                        lineNumber: 103,
+                                                        lineNumber: 106,
                                                         columnNumber: 21
                                                     }, this),
                                                     data?.PostAuthorsList.map((data, index)=>{
@@ -403,12 +404,12 @@ const MainBanner = async ({ data, mainBanner })=>{
                                                                         className: "w-full h-full object-contain"
                                                                     }, void 0, false, {
                                                                         fileName: "[project]/app/components/banner/MainBanner.jsx",
-                                                                        lineNumber: 110,
+                                                                        lineNumber: 116,
                                                                         columnNumber: 29
                                                                     }, this)
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/app/components/banner/MainBanner.jsx",
-                                                                    lineNumber: 109,
+                                                                    lineNumber: 115,
                                                                     columnNumber: 27
                                                                 }, this),
                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -420,7 +421,7 @@ const MainBanner = async ({ data, mainBanner })=>{
                                                                                 children: data.AuthorName
                                                                             }, void 0, false, {
                                                                                 fileName: "[project]/app/components/banner/MainBanner.jsx",
-                                                                                lineNumber: 118,
+                                                                                lineNumber: 124,
                                                                                 columnNumber: 31
                                                                             }, this),
                                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -428,24 +429,24 @@ const MainBanner = async ({ data, mainBanner })=>{
                                                                                 children: data.UserName
                                                                             }, void 0, false, {
                                                                                 fileName: "[project]/app/components/banner/MainBanner.jsx",
-                                                                                lineNumber: 119,
+                                                                                lineNumber: 127,
                                                                                 columnNumber: 31
                                                                             }, this)
                                                                         ]
                                                                     }, void 0, true, {
                                                                         fileName: "[project]/app/components/banner/MainBanner.jsx",
-                                                                        lineNumber: 117,
+                                                                        lineNumber: 123,
                                                                         columnNumber: 29
                                                                     }, this)
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/app/components/banner/MainBanner.jsx",
-                                                                    lineNumber: 116,
+                                                                    lineNumber: 122,
                                                                     columnNumber: 27
                                                                 }, this)
                                                             ]
                                                         }, index, true, {
                                                             fileName: "[project]/app/components/banner/MainBanner.jsx",
-                                                            lineNumber: 108,
+                                                            lineNumber: 111,
                                                             columnNumber: 25
                                                         }, this);
                                                     }),
@@ -461,7 +462,7 @@ const MainBanner = async ({ data, mainBanner })=>{
                                                                             className: "dynamic-icon-color-main"
                                                                         }, void 0, false, {
                                                                             fileName: "[project]/app/components/banner/MainBanner.jsx",
-                                                                            lineNumber: 128,
+                                                                            lineNumber: 136,
                                                                             columnNumber: 27
                                                                         }, this),
                                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -469,13 +470,13 @@ const MainBanner = async ({ data, mainBanner })=>{
                                                                             children: dateOnly
                                                                         }, void 0, false, {
                                                                             fileName: "[project]/app/components/banner/MainBanner.jsx",
-                                                                            lineNumber: 129,
+                                                                            lineNumber: 137,
                                                                             columnNumber: 27
                                                                         }, this)
                                                                     ]
                                                                 }, void 0, true, {
                                                                     fileName: "[project]/app/components/banner/MainBanner.jsx",
-                                                                    lineNumber: 127,
+                                                                    lineNumber: 135,
                                                                     columnNumber: 25
                                                                 }, this),
                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -485,7 +486,7 @@ const MainBanner = async ({ data, mainBanner })=>{
                                                                             className: "dynamic-icon-color-main"
                                                                         }, void 0, false, {
                                                                             fileName: "[project]/app/components/banner/MainBanner.jsx",
-                                                                            lineNumber: 134,
+                                                                            lineNumber: 142,
                                                                             columnNumber: 27
                                                                         }, this),
                                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -493,41 +494,41 @@ const MainBanner = async ({ data, mainBanner })=>{
                                                                             children: timeOnly
                                                                         }, void 0, false, {
                                                                             fileName: "[project]/app/components/banner/MainBanner.jsx",
-                                                                            lineNumber: 135,
+                                                                            lineNumber: 143,
                                                                             columnNumber: 27
                                                                         }, this)
                                                                     ]
                                                                 }, void 0, true, {
                                                                     fileName: "[project]/app/components/banner/MainBanner.jsx",
-                                                                    lineNumber: 133,
+                                                                    lineNumber: 141,
                                                                     columnNumber: 25
                                                                 }, this)
                                                             ]
                                                         }, void 0, true, {
                                                             fileName: "[project]/app/components/banner/MainBanner.jsx",
-                                                            lineNumber: 126,
+                                                            lineNumber: 134,
                                                             columnNumber: 23
                                                         }, this)
                                                     }, void 0, false, {
                                                         fileName: "[project]/app/components/banner/MainBanner.jsx",
-                                                        lineNumber: 125,
+                                                        lineNumber: 133,
                                                         columnNumber: 21
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/app/components/banner/MainBanner.jsx",
-                                                lineNumber: 102,
+                                                lineNumber: 105,
                                                 columnNumber: 19
                                             }, this)
                                         ]
                                     }, index, true, {
                                         fileName: "[project]/app/components/banner/MainBanner.jsx",
-                                        lineNumber: 89,
+                                        lineNumber: 91,
                                         columnNumber: 17
                                     }, this)
                                 }, index, false, {
                                     fileName: "[project]/app/components/banner/MainBanner.jsx",
-                                    lineNumber: 84,
+                                    lineNumber: 86,
                                     columnNumber: 15
                                 }, this);
                             }),
@@ -536,24 +537,24 @@ const MainBanner = async ({ data, mainBanner })=>{
                                     gridData: data
                                 }, void 0, false, {
                                     fileName: "[project]/app/components/banner/MainBanner.jsx",
-                                    lineNumber: 149,
+                                    lineNumber: 157,
                                     columnNumber: 13
                                 }, this)
                             }, void 0, false, {
                                 fileName: "[project]/app/components/banner/MainBanner.jsx",
-                                lineNumber: 148,
+                                lineNumber: 156,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/app/components/banner/MainBanner.jsx",
-                        lineNumber: 73,
+                        lineNumber: 75,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/app/components/banner/MainBanner.jsx",
-                lineNumber: 53,
+                lineNumber: 55,
                 columnNumber: 7
             }, this)
         ]
@@ -897,7 +898,8 @@ const __TURBOPACK__default__export__ = Cards;
 var { g: global, __dirname } = __turbopack_context__;
 {
 __turbopack_context__.s({
-    "default": (()=>Home)
+    "default": (()=>Home),
+    "generateMetadata": (()=>generateMetadata)
 });
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/server/route-modules/app-page/vendored/rsc/react-jsx-dev-runtime.js [app-rsc] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$app$2f$components$2f$banner$2f$MainBanner$2e$jsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/app/components/banner/MainBanner.jsx [app-rsc] (ecmascript)");
@@ -907,11 +909,55 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$api$2f$services$2f$homeServi
 ;
 ;
 ;
+async function generateMetadata() {
+    const WEB_URL = process.env.WEB_URL;
+    const data = await (0, __TURBOPACK__imported__module__$5b$project$5d2f$api$2f$services$2f$homeService$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["fetchHomeData"])();
+    const featuredMetaPosts = data.res.FeaturedPosts || [];
+    const filteredMetaFeaturedPosts = featuredMetaPosts.filter((post)=>post.IsFeatures === true);
+    const firstMetaPost = filteredMetaFeaturedPosts.slice(0, 1);
+    const author = firstMetaPost?.PostAuthorsList?.[0];
+    const creatorHandle = author?.UserName?.startsWith("@") ? author.UserName : `@${author?.UserName?.split("@")[0] || "GroundConnect"}`;
+    return {
+        title: firstMetaPost.Title,
+        description: firstMetaPost.Description,
+        keywords: firstMetaPost.Keywords?.split(",") || [],
+        openGraph: {
+            type: "article",
+            url: `${WEB_URL}/article/${firstMetaPost.Slug}`,
+            title: firstMetaPost.Title,
+            description: firstMetaPost.Description,
+            siteName: "Ground Connect",
+            images: [
+                {
+                    url: firstMetaPost.FileUrlUpload || `${WEB_URL}/logo.png` || "/logo.png",
+                    width: 750,
+                    height: 422,
+                    alt: firstMetaPost.Title
+                }
+            ],
+            locale: "en_US"
+        },
+        twitter: {
+            card: "summary_large_image",
+            title: firstMetaPost.Title,
+            description: firstMetaPost.Description,
+            images: [
+                firstMetaPost.FileUrlUpload || `${WEB_URL}/logo.png` || "/logo.png"
+            ],
+            site: "@GroundConnect",
+            creator: creatorHandle
+        },
+        other: {
+            canonical: `${WEB_URL}/article/${firstMetaPost.Slug}`
+        }
+    };
+}
 async function Home() {
     const data = await (0, __TURBOPACK__imported__module__$5b$project$5d2f$api$2f$services$2f$homeService$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["fetchHomeData"])();
     const featuredPosts = data.res.FeaturedPosts || [];
     const filteredFeaturedPosts = featuredPosts.filter((post)=>post.IsFeatures === true);
     const firstFivePosts = filteredFeaturedPosts.slice(0, 5);
+    console.log(firstFivePosts, "data from home page ");
     const categoryPost = data.res.Categories || [];
     const categoryPostFilter = categoryPost.slice(0, 7);
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["Fragment"], {
@@ -921,14 +967,14 @@ async function Home() {
                 mainBanner: filteredFeaturedPosts
             }, void 0, false, {
                 fileName: "[project]/app/(root)/page.js",
-                lineNumber: 19,
+                lineNumber: 71,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$app$2f$components$2f$CardSlide$2f$Cards$2e$jsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"], {
                 data: categoryPostFilter
             }, void 0, false, {
                 fileName: "[project]/app/(root)/page.js",
-                lineNumber: 20,
+                lineNumber: 72,
                 columnNumber: 7
             }, this)
         ]

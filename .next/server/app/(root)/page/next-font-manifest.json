@@ -2,12 +2,12 @@
   "pages": {},
   "app": {
     "[project]/app/(root)/page": [
-      "static/media/iJWHBXyXfDDVXbFmi2md8WD07oB_-s.p.fc3ad850.woff2",
-      "static/media/iJWHBXyXfDDVXbEyjmmd8WD07oB_-s.p.af804a9b.woff2",
-      "static/media/iJWHBXyXfDDVXbFqj2md8WD07oB_-s.p.041a2554.woff2",
+      "static/media/iJWHBXyXfDDVXbF6iGmd8WD07oB_-s.p.e8f1dbf0.woff2",
       "static/media/iJWKBXyXfDDVXbnBrXyw023e-s.p.94f478ed.woff2",
+      "static/media/iJWHBXyXfDDVXbFqj2md8WD07oB_-s.p.041a2554.woff2",
+      "static/media/iJWHBXyXfDDVXbEyjmmd8WD07oB_-s.p.af804a9b.woff2",
       "static/media/iJWHBXyXfDDVXbEeiWmd8WD07oB_-s.p.92081914.woff2",
-      "static/media/iJWHBXyXfDDVXbF6iGmd8WD07oB_-s.p.e8f1dbf0.woff2"
+      "static/media/iJWHBXyXfDDVXbFmi2md8WD07oB_-s.p.fc3ad850.woff2"
     ]
   },
   "appUsingSizeAdjust": true,

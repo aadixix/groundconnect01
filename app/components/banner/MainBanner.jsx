@@ -17,8 +17,9 @@ const MainBanner = async ({ data, mainBanner }) => {
 
   return (
     <>
-      <style dangerouslySetInnerHTML={{
-        __html: `
+      <style
+        dangerouslySetInnerHTML={{
+          __html: `
           .main-banner-container {
             --primary-color: ${primaryColor};
             --secondary-color: ${secondaryColor};
@@ -47,8 +48,9 @@ const MainBanner = async ({ data, mainBanner }) => {
           .dynamic-hover-shadow-main:hover {
             box-shadow: 0 10px 25px rgba(209, 213, 219, 0.4);
           }
-        `
-      }} />
+        `,
+        }}
+      />
 
       <div className="main_width py-10 main-banner-container">
         {/* Top Section Heading with Newsletter */}
@@ -96,6 +98,7 @@ const MainBanner = async ({ data, mainBanner }) => {
                       alt={data.Title}
                       fill
                       sizes=" "
+                      priority
                       className="w-full h-full object-cover border"
                     />
                   </div>
@@ -105,7 +108,10 @@ const MainBanner = async ({ data, mainBanner }) => {
                     </h1>
                     {data?.PostAuthorsList.map((data, index) => {
                       return (
-                        <div className="mt-4 flex items-center gap-2" key={index}>
+                        <div
+                          className="mt-4 flex items-center gap-2"
+                          key={index}
+                        >
                           <div className="w-[40px] h-[40px] rounded-full border dynamic-border-main overflow-hidden">
                             <img
                               src={data.Photo || "/fav.png"}
@@ -115,7 +121,9 @@ const MainBanner = async ({ data, mainBanner }) => {
                           </div>
                           <div className="font-medium">
                             <div>
-                              <div className="font-medium">{data.AuthorName}</div>
+                              <div className="font-medium">
+                                {data.AuthorName}
+                              </div>
                               <div className="">{data.UserName}</div>
                             </div>
                           </div>

@@ -1330,7 +1330,8 @@ var { g: global, __dirname } = __turbopack_context__;
 {
 __turbopack_context__.s({
     "default": (()=>RootLayout),
-    "metadata": (()=>metadata)
+    "metadata": (()=>metadata),
+    "metadataBase": (()=>metadataBase)
 });
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/server/route-modules/app-page/vendored/rsc/react-jsx-dev-runtime.js [app-rsc] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$next$5d2f$internal$2f$font$2f$google$2f$mukta_c34c98bb$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[next]/internal/font/google/mukta_c34c98bb.js [app-rsc] (ecmascript)");
@@ -1341,101 +1342,98 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$app$2f$components$2f$Footer$
 ;
 ;
 ;
+const WEB_URL = process.env.WEB_URL || ""; // fallback to "" if undefined
+const metadataBase = new URL(WEB_URL || "https://www.groundconnect.in");
 const metadata = {
     title: "Ground Connect",
-    description: "प्रधानमंत्री नरेंद्र मोदी ने इस महत्वाकांक्षी ...",
-    icons: {
-        icon: "/fav.png"
-    },
+    description: "भारत की ग्रामीण अर्थव्यवस्था की ज़मीनी रिपोर्टिंग।",
     keywords: [
-        "India",
-        "UK",
-        "United Kingdom",
-        "India-UK Free Trade Agreement",
-        "tariff",
-        "agriculture exports",
-        "automobiles",
-        "textiles",
-        "footwear",
-        "whisky",
-        "food products",
-        "marine products",
-        "Prime Minister Narendra Modi",
-        "FIEO"
+        "Ground Connect",
+        "Indian Agriculture",
+        "Rural India",
+        "News",
+        "Economy",
+        "Policy",
+        "Farming"
     ],
     authors: [
         {
-            name: "Codingest"
+            name: "Ground Connect Team"
         }
     ],
     robots: "index, follow",
+    icons: {
+        icon: "/fav.png",
+        shortcut: "/fav.png",
+        apple: "/fav.png"
+    },
     openGraph: {
-        locale: "en_US",
+        type: "website",
+        url: WEB_URL || "https://www.groundconnect.in",
         siteName: "Ground Connect",
-        type: "article",
-        title: "ब्रिटेन के साथ मुक्त व्यापार समझौते के भारतीय अर्थव्यवस्था और कृषि के लिए क्या मायने?",
-        description: "प्रधानमंत्री नरेंद्र मोदी ने इस महत्वाकांक्षी ...",
-        url: "https://www.groundconnect.in/article/crop-damage-due-to-heavy-rain-government-is-providing-compensation-2938635",
+        title: "Ground Connect - ग्रामीण भारत की आवाज़",
+        description: "भारत की ग्रामीण अर्थव्यवस्था, कृषि, और नीति से जुड़ी गहराई से रिपोर्टिंग।",
         images: [
             {
-                url: "https://demo.nuovasoft.in/aslibharat/wp-content/uploads/2023/09/Picture1.png",
-                width: 750,
-                height: 422
+                url: WEB_URL ? `${WEB_URL}/banner/panther.jpg` : "/banner/panther.jpg",
+                width: 1200,
+                height: 630,
+                alt: "Ground Connect OG Image"
             }
-        ]
+        ],
+        locale: "en_US"
     },
     twitter: {
         card: "summary_large_image",
-        site: "@RuralVoice",
-        creator: "@Ajeet Singh",
-        title: "ब्रिटेन के साथ मुक्त व्यापार समझौते के भारतीय अर्थव्यवस्था और कृषि के लिए क्या मायने?",
-        description: "प्रधानमंत्री नरेंद्र मोदी ने इस महत्वाकांक्षी ...",
+        site: "@GroundConnect",
+        creator: "@GroundConnect",
+        title: "Ground Connect - ग्रामीण भारत की आवाज़",
+        description: "भारत की ग्रामीण अर्थव्यवस्था, कृषि, और नीति से जुड़ी गहराई से रिपोर्टिंग।",
         images: [
-            "https://demo.nuovasoft.in/aslibharat/wp-content/uploads/2023/09/Picture1.png"
+            WEB_URL ? `${WEB_URL}/banner/panther.jpg` : "/banner/panther.jpg"
         ]
     },
     verification: {
         google: ""
     },
     other: {
-        canonical: "https://www.groundconnect.in/article/crop-damage-due-to-heavy-rain-government-is-providing-compensation-2938635",
-        shortcutIcon: "https://demo.nuovasoft.in/aslibharat/wp-content/uploads/2023/09/Picture1.png"
+        canonical: WEB_URL || "https://www.groundconnect.in"
     }
 };
 async function RootLayout({ children, params }) {
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("html", {
         lang: "en",
         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("body", {
-            className: `${__TURBOPACK__imported__module__$5b$next$5d2f$internal$2f$font$2f$google$2f$mukta_c34c98bb$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"].variable}  `,
+            className: __TURBOPACK__imported__module__$5b$next$5d2f$internal$2f$font$2f$google$2f$mukta_c34c98bb$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"].className,
             children: [
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$app$2f$components$2f$Header$2e$jsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"], {
                     currentPath: params
                 }, void 0, false, {
                     fileName: "[project]/app/layout.js",
-                    lineNumber: 78,
+                    lineNumber: 77,
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("main", {
                     children: children
                 }, void 0, false, {
                     fileName: "[project]/app/layout.js",
-                    lineNumber: 79,
+                    lineNumber: 78,
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$app$2f$components$2f$Footer$2e$jsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"], {}, void 0, false, {
                     fileName: "[project]/app/layout.js",
-                    lineNumber: 80,
+                    lineNumber: 79,
                     columnNumber: 9
                 }, this)
             ]
         }, void 0, true, {
             fileName: "[project]/app/layout.js",
-            lineNumber: 77,
+            lineNumber: 76,
             columnNumber: 7
         }, this)
     }, void 0, false, {
         fileName: "[project]/app/layout.js",
-        lineNumber: 76,
+        lineNumber: 75,
         columnNumber: 5
     }, this);
 }

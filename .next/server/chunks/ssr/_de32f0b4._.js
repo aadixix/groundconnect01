@@ -1181,7 +1181,8 @@ const __TURBOPACK__default__export__ = ArticleDetail;
 var { g: global, __dirname } = __turbopack_context__;
 {
 __turbopack_context__.s({
-    "default": (()=>SlugPage)
+    "default": (()=>SlugPage),
+    "generateMetadata": (()=>generateMetadata)
 });
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/server/route-modules/app-page/vendored/rsc/react-jsx-dev-runtime.js [app-rsc] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$api$2f$services$2f$homeService$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/api/services/homeService.js [app-rsc] (ecmascript)");
@@ -1189,6 +1190,96 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$app$2f$components$2f$Article
 ;
 ;
 ;
+async function generateMetadata(input) {
+    const params = await input.params;
+    const slug = params.slug;
+    const WEB_URL = process.env.WEB_URL;
+    console.log(slug);
+    const { rc: [article] = [] } = await (0, __TURBOPACK__imported__module__$5b$project$5d2f$api$2f$services$2f$homeService$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["getDataBySlug"])({
+        slug
+    });
+    if (!article) {
+        return {
+            title: "Article Not Found",
+            description: "This article does not exist."
+        };
+    }
+    const { Title: title = "Ground Connect", Description: description = "", Tags = "", FileUrlUpload: image = "/default-image.jpg", PostAuthorsList = [], CreatedDate: publishedAt = new Date().toISOString(), CategoryId, CategoryLanguage, Slug: articleSlug } = article;
+    const keywords = Tags ? Tags.split(",").map((tag)=>tag.trim()) : [];
+    const authorObj = PostAuthorsList[0] || {};
+    const author = authorObj.Name || "Ground Connect";
+    const authorSlug = authorObj.Slug || "ground-connect";
+    const authorTwitter = authorObj.Twitter || "GroundConnect";
+    const baseURL = WEB_URL;
+    const url = `${baseURL}/articles/${articleSlug}`;
+    const authorProfile = `${baseURL}/authors/${authorSlug}`;
+    const ogImage = image || `${baseURL}/logo.png`;
+    return {
+        metadataBase: new URL(baseURL),
+        title,
+        description,
+        keywords,
+        authors: [
+            {
+                name: author
+            }
+        ],
+        alternates: {
+            canonical: url
+        },
+        icons: {
+            icon: "/fav.png",
+            shortcut: "/fav.png",
+            apple: "/fav.png"
+        },
+        openGraph: {
+            type: "article",
+            locale: "en_US",
+            siteName: "Ground Connect",
+            url,
+            title,
+            description,
+            publishedTime: publishedAt,
+            authors: [
+                authorProfile
+            ],
+            section: `Category-${CategoryId || "General"}`,
+            tags: keywords,
+            images: [
+                {
+                    url: ogImage,
+                    width: 1200,
+                    height: 630,
+                    alt: title
+                }
+            ]
+        },
+        twitter: {
+            card: "summary_large_image",
+            title,
+            description,
+            images: [
+                ogImage
+            ],
+            site: "@GroundConnect",
+            creator: `@${authorTwitter}`
+        },
+        other: {
+            "og:title": title,
+            "og:description": description,
+            "og:image": ogImage,
+            "og:image:type": "image/jpeg",
+            "og:image:width": "1200",
+            "og:image:height": "630",
+            "og:url": url,
+            "article:published_time": publishedAt,
+            "article:author": authorProfile,
+            "article:section": `Category-${CategoryId}`,
+            "article:tag": keywords.join(", "),
+            "article:language": `Language-${CategoryLanguage || "1"}`
+        }
+    };
+}
 async function SlugPage({ params }) {
     const { slug } = await params;
     const rs = await (0, __TURBOPACK__imported__module__$5b$project$5d2f$api$2f$services$2f$homeService$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["getDataBySlug"])({
@@ -1203,7 +1294,7 @@ async function SlugPage({ params }) {
                     children: "Article Not Found"
                 }, void 0, false, {
                     fileName: "[project]/app/(root)/articles/[slug]/page.js",
-                    lineNumber: 12,
+                    lineNumber: 112,
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -1211,13 +1302,13 @@ async function SlugPage({ params }) {
                     children: "The article you are looking for does not exist."
                 }, void 0, false, {
                     fileName: "[project]/app/(root)/articles/[slug]/page.js",
-                    lineNumber: 13,
+                    lineNumber: 113,
                     columnNumber: 9
                 }, this)
             ]
         }, void 0, true, {
             fileName: "[project]/app/(root)/articles/[slug]/page.js",
-            lineNumber: 11,
+            lineNumber: 111,
             columnNumber: 7
         }, this);
     }
@@ -1292,12 +1383,12 @@ async function SlugPage({ params }) {
             relatedPosts: relatedPosts
         }, void 0, false, {
             fileName: "[project]/app/(root)/articles/[slug]/page.js",
-            lineNumber: 112,
+            lineNumber: 212,
             columnNumber: 7
         }, this)
     }, void 0, false, {
         fileName: "[project]/app/(root)/articles/[slug]/page.js",
-        lineNumber: 111,
+        lineNumber: 211,
         columnNumber: 5
     }, this);
 }

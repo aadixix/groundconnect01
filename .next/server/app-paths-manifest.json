@@ -1,4 +1,6 @@
 {
   "/(root)/articles/[slug]/page": "app/(root)/articles/[slug]/page.js",
-  "/favicon.ico/route": "app/favicon.ico/route.js"
+  "/(root)/page": "app/(root)/page.js",
+  "/_not-found/page": "app/_not-found/page.js",
+  "/category/[slug]/page": "app/category/[slug]/page.js"
 }

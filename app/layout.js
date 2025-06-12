@@ -3,78 +3,77 @@ import "./globals.css";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 
+// Load font
 const mukta = Mukta({
   subsets: ["latin"],
   weight: ["300", "400", "500", "600", "700", "800"],
   display: "swap",
 });
+const WEB_URL = process.env.WEB_URL || ""; // fallback to "" if undefined
+
+export const metadataBase = new URL(WEB_URL || "https://www.groundconnect.in");
 
 export const metadata = {
   title: "Ground Connect",
-  description: "प्रधानमंत्री नरेंद्र मोदी ने इस महत्वाकांक्षी ...",
+  description: "भारत की ग्रामीण अर्थव्यवस्था की ज़मीनी रिपोर्टिंग।",
+  keywords: [
+    "Ground Connect",
+    "Indian Agriculture",
+    "Rural India",
+    "News",
+    "Economy",
+    "Policy",
+    "Farming",
+  ],
+  authors: [{ name: "Ground Connect Team" }],
+  robots: "index, follow",
+
   icons: {
     icon: "/fav.png",
+    shortcut: "/fav.png",
+    apple: "/fav.png",
   },
-  keywords: [
-    "India",
-    "UK",
-    "United Kingdom",
-    "India-UK Free Trade Agreement",
-    "tariff",
-    "agriculture exports",
-    "automobiles",
-    "textiles",
-    "footwear",
-    "whisky",
-    "food products",
-    "marine products",
-    "Prime Minister Narendra Modi",
-    "FIEO",
-  ],
-  authors: [{ name: "Codingest" }],
-  robots: "index, follow",
   openGraph: {
-    locale: "en_US",
+    type: "website",
+    url: WEB_URL || "https://www.groundconnect.in",
     siteName: "Ground Connect",
-    type: "article",
-    title:
-      "ब्रिटेन के साथ मुक्त व्यापार समझौते के भारतीय अर्थव्यवस्था और कृषि के लिए क्या मायने?",
-    description: "प्रधानमंत्री नरेंद्र मोदी ने इस महत्वाकांक्षी ...",
-    url: "https://www.groundconnect.in/article/crop-damage-due-to-heavy-rain-government-is-providing-compensation-2938635",
+    title: "Ground Connect - ग्रामीण भारत की आवाज़",
+    description:
+      "भारत की ग्रामीण अर्थव्यवस्था, कृषि, और नीति से जुड़ी गहराई से रिपोर्टिंग।",
     images: [
       {
-        url: "https://demo.nuovasoft.in/aslibharat/wp-content/uploads/2023/09/Picture1.png",
-        width: 750,
-        height: 422,
+        url: WEB_URL ? `${WEB_URL}/banner/panther.jpg` : "/banner/panther.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Ground Connect OG Image",
       },
     ],
+    locale: "en_US",
   },
+
   twitter: {
     card: "summary_large_image",
-    site: "@RuralVoice",
-    creator: "@Ajeet Singh",
-    title:
-      "ब्रिटेन के साथ मुक्त व्यापार समझौते के भारतीय अर्थव्यवस्था और कृषि के लिए क्या मायने?",
-    description: "प्रधानमंत्री नरेंद्र मोदी ने इस महत्वाकांक्षी ...",
-    images: [
-      "https://demo.nuovasoft.in/aslibharat/wp-content/uploads/2023/09/Picture1.png",
-    ],
+    site: "@GroundConnect",
+    creator: "@GroundConnect",
+    title: "Ground Connect - ग्रामीण भारत की आवाज़",
+    description:
+      "भारत की ग्रामीण अर्थव्यवस्था, कृषि, और नीति से जुड़ी गहराई से रिपोर्टिंग।",
+    images: [WEB_URL ? `${WEB_URL}/banner/panther.jpg` : "/banner/panther.jpg"],
   },
+
   verification: {
-    google: "", // if any
+    google: "", // Add your site verification ID here if available
   },
+
   other: {
-    canonical:
-      "https://www.groundconnect.in/article/crop-damage-due-to-heavy-rain-government-is-providing-compensation-2938635",
-    shortcutIcon:
-      "https://demo.nuovasoft.in/aslibharat/wp-content/uploads/2023/09/Picture1.png",
+    canonical: WEB_URL || "https://www.groundconnect.in",
   },
 };
 
 export default async function RootLayout({ children, params }) {
   return (
     <html lang="en">
-      <body className={`${mukta.variable}  `}>
+      <body className={mukta.className}>
         <Header currentPath={params} />
         <main>{children}</main>
         <Footer />

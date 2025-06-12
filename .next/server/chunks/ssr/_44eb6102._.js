@@ -313,8 +313,10 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist
 ;
 async function CategoryPage({ params }) {
     try {
-        const decodedSlug = decodeURIComponent(params.slug);
+        const { slug } = await params;
+        const decodedSlug = decodeURIComponent(slug);
         const data = await (0, __TURBOPACK__imported__module__$5b$project$5d2f$api$2f$services$2f$homeService$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["getCategoryBySlug"])(decodedSlug);
+        console.log(data);
         if (!data || data.rs !== 1 || !data.res?.Categories?.[0]) {
             (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$components$2f$navigation$2e$react$2d$server$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["notFound"])();
         }
@@ -327,12 +329,12 @@ async function CategoryPage({ params }) {
                 title: category.CategoryName
             }, void 0, false, {
                 fileName: "[project]/app/category/[slug]/page.js",
-                lineNumber: 20,
+                lineNumber: 25,
                 columnNumber: 9
             }, this)
         }, void 0, false, {
             fileName: "[project]/app/category/[slug]/page.js",
-            lineNumber: 19,
+            lineNumber: 24,
             columnNumber: 7
         }, this);
     } catch (error) {
